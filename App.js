@@ -6,37 +6,12 @@ import { Constants } from 'expo';
 import AssetExample from './components/AssetExample';
 
 // or any pure javascript modules available in npm
-import { Card } from 'react-native-elements'; // 0.18.5
+import { Tabs } from './config/router';
 
-export default class App extends Component {
+class App extends Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.paragraph}>
-          Change code in the editor and watch it change on your phone!
-          Save to get a shareable url.
-        </Text>
-        <Card title="Local Modules">
-          <AssetExample />
-        </Card>
-      </View>
-    );
+    return <Tabs/>;
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#ecf0f1',
-  },
-  paragraph: {
-    margin: 24,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#34495e',
-  },
-});
+export default App;
