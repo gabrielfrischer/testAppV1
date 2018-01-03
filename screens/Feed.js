@@ -3,7 +3,8 @@ import {
   Text,
   View,
   ScrollView, 
-  StyleSheet
+  StyleSheet,
+  Image
 } from 'react-native';
 import { Card } from 'react-native-elements'; // 0.18.5
 import { Constants } from 'expo';
@@ -17,6 +18,14 @@ class Feed extends Component {
       <Text style={styles.paragraph}>
         Feed
       </Text>
+      <Card title="Local Modules">
+      <View >
+        <Text >
+          Local files and assets can be imported by dragging and dropping them into the editor
+        </Text>
+        <Image source={require("../assets/expo.symbol.white.png")}/>
+      </View>
+        </Card>
     </View>
       </ScrollView>
     );
