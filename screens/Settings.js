@@ -7,14 +7,14 @@ import {
 } from 'react-native';
 import { Constants } from 'expo';
 
-class Me extends Component {
+class Settings extends Component {
   
   render() {
     return (
       <ScrollView>
       <View style={styles.container}>
       <Text style={styles.paragraph}>
-        Me
+        Settings
       </Text>
     </View>
       </ScrollView>
@@ -22,7 +22,7 @@ class Me extends Component {
   }
 }
 
-export default Me;
+export default Settings;
 
 
 

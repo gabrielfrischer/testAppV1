@@ -9,16 +9,40 @@ import {
 import { Card } from 'react-native-elements'; // 0.18.5
 import { Constants } from 'expo';
 
-class Feed extends Component {
+class Home extends Component {
 
   render() {
     return (
       <ScrollView>
       <View style={styles.container}>
       <Text style={styles.paragraph}>
-        Feed
+        Home
       </Text>
-      <Card title="Local Modules">
+      <Card title="Standing Balance">
+      <View >
+        <Text >
+          Local files and assets can be imported by dragging and dropping them into the editor
+        </Text>
+        <Image source={require("../assets/expo.symbol.white.png")}/>
+      </View>
+        </Card>
+        <Card title="Walking Speed">
+      <View >
+        <Text >
+          Local files and assets can be imported by dragging and dropping them into the editor
+        </Text>
+        <Image source={require("../assets/expo.symbol.white.png")}/>
+      </View>
+        </Card>
+        <Card title="Stride Length">
+      <View >
+        <Text >
+          Local files and assets can be imported by dragging and dropping them into the editor
+        </Text>
+        <Image source={require("../assets/expo.symbol.white.png")}/>
+      </View>
+        </Card>
+        <Card title="Stride Symmetry">
       <View >
         <Text >
           Local files and assets can be imported by dragging and dropping them into the editor
@@ -32,7 +56,7 @@ class Feed extends Component {
   }
 }
 
-export default Feed;
+export default Home;
 
 
 const styles = StyleSheet.create({

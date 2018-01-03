@@ -2,24 +2,24 @@ import React from 'react';
 import { TabNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
-import Feed from '../screens/Feed';
-import Me from '../screens/Me';
+import Home from '../screens/Home';
+import Settings from '../screens/Settings';
 
 
 
 
 
 export const Tabs = TabNavigator({
-  Feed: {
-    screen: Feed,
+  Home: {
+    screen: Home,
   },
-  Me: {
-    screen: Me,
+  Settings: {
+    screen: Settings,
   },
 }, {
   tabBarPosition: 'bottom',
   animationEnabled: true,
   tabBarOptions: {
-    activeTintColor: '#e91e63',
+    activeTintColor: '#ffffff',
   },
 });
